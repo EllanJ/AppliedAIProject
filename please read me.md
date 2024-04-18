@@ -11,4 +11,4 @@ second (SA INYONG TERMINAL)
 4.   pip install mediapipe
 5.   pip install pycaw
 
-mao rana!
+mao rana, AMEN!
