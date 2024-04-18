@@ -68,6 +68,8 @@ while True:
         cv2.rectangle(img, (50, 150), (85, 400), (0, 255, 0), 3)
         cv2.rectangle(img, (50, int(volBar)), (85, 400), (0, 255, 0), cv2.FILLED)
         cv2.putText(img, f'Volume: {int(volPer)}%', (40, 450), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 255), 2)
+        cVol = int(volume.GetMasterVolumeLevelScalar() * 100)
+        cv2.putText(img, f'Currect Volume: {int(cVol)}%', (400, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 255), 2)
 
     cv2.imshow("facecam", img)
     key = cv2.waitKey(1) & 0xFF
