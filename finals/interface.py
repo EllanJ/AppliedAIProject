@@ -13,7 +13,7 @@ import google.generativeai as genai
 
 
 recognizer = sr.Recognizer()
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyDme7NsAOlmWPbwsZdOv9zsuZ-AgnWnVI0'
+os.environ['GOOGLE_API_KEY'] = 'yourapikey'
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 generation_config = {
     "temperature": 0.7,
